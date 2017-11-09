@@ -1,0 +1,66 @@
+// Вспомогательные библиотеки
+@import './fonts.scss';
+@import './utils/vars.scss';
+@import './utils/mixin.scss';
+
+// Базовые стили страницы
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: $mainFonts;
+  font-size: $sizeFonts;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+textarea{
+  resize: none;
+}
+
+.wrapper{
+  max-width: $baseWidth;
+  width: 100%;
+}
+
+.container{
+  max-width: $containerWidth;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Хедер страницы
+@import './modules/header.scss';
+
+// Основной блок страницы
+@import './modules/main.scss';
+
+// Сайдбар страницы
+@import './modules/sidebar.scss';
+
+// Футер страницы
+@import './modules/footer.scss';
+
+// Стилизация элементов на страницах
+@import './components/components.scss';
+
+// Стилизация для страниц
+@import './pages/index.scss';
